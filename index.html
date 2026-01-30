@@ -26,59 +26,55 @@
             </table>
         </header>
 
+        <section class="section highlight-section">
+        <h2 class="section-title">Resumo</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h4>Faturamento</h4>
+                <p class="card-number">R$ 320.000</p>
+                <span class="card-label">+12% vs trimestre anterior</span>
+            </div>
+
+            <div class="card">
+                <h4>Vendas</h4>
+                <p class="card-number">2.100</p>
+                <span class="card-label">Unidades vendidas</span>
+            </div>
+
+            <div class="card">
+                <h4>Regiões</h4>
+                <p class="card-number">5</p>
+                <span class="card-label">Ativas no período</span>
+            </div>
+        </div>
+    </section>
+
         <section class="section">
             <h2 class="section-title">Análise Detalhada</h2>
-
             <h3 class="subsection-title">Principais Produtos</h3>
             <table class="data-table">
                 <thead>
-
+                    <tr>
+                        <th>Produto</th>
+                        <th>Vendas</th>
+                        <th>Receita</th>
+                    </tr>
                 </thead>
                 <tbody>
-                    trade
+                    <tr>
+                        <td>Produto A</td>
+                        <td>1.200</td>
+                        <td>R$ 180.000</td>
+                    </tr>
+                    <tr>
+                        <td>Produto B</td>
+                        <td>900</td>
+                        <td>R$ 140.000</td>
+                    </tr>
                 </tbody>
             </table>
         </section>
-
-        <section class="">
-            <h2 class="section-title">Análise Detalhada</h2>
-
-            <div style="width: 80%; margin: 20px auto;">
-                <canvas id="myChart"></canvas>
-            </div>
-
-            <h3 class="subsection-title">Desempenho por Região</h3>
-        </section>
-
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-        <script>
-            const ctx = document.getElementById('myChart');
-
-            const chartLabels = {CHART_LABELS};
-            const chartData = {CHART_VALUES};
-
-            new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: chartLabels,
-                    datasets: [{
-                        label: 'Faturamento (R$)',
-                        data: chartData,
-                        backgroundColor: '#2a5298',
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    animation: false,
-                    plugins: {
-                        legend: { position: 'top' },
-                        title: { display: true, text: 'Consolidado Regional' }
-                    }
-                }
-            });
-        </script>
         
         <footer class="report-footer">
             <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
